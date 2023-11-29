@@ -11,7 +11,7 @@ const app = express();
 app.use(cors({credentials: true, origin: "*"}));
 app.use(express.json());
 Hello(app);
-Lab5(app);git 
+Lab5(app);
 CourseRoutes(app);
 ModuleRoutes(app);
 app.listen(process.env.PORT || 4000);

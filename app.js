@@ -8,10 +8,10 @@ import "dotenv/config";
 import session from "express-session";
 
 const app = express();
-app.use(cors({credentials: true, origin: process.env.FRONTEND_URL}));
+app.use(cors({credentials: true, origin: "*"}));
 app.use(express.json());
 Hello(app);
-Lab5(app);
+Lab5(app);git 
 CourseRoutes(app);
 ModuleRoutes(app);
 app.listen(process.env.PORT || 4000);
